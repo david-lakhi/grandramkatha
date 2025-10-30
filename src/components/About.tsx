@@ -14,14 +14,13 @@ export default function About() {
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-red-500 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
-            <div className="relative bg-white rounded-3xl p-8 shadow-2xl border-2 border-orange-200">
-              <div className="aspect-video bg-gradient-to-br from-orange-200 via-red-200 to-amber-200 rounded-2xl flex items-center justify-center overflow-hidden">
-                <div className="text-center">
-                  <div className="text-8xl mb-4">🕉️</div>
-                  <p className="text-2xl font-bold text-orange-900 cinzel">Shri Ram Katha</p>
-                </div>
-              </div>
+            {/* <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-red-500 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div> */}
+            <div className="relative bg-white rounded-3xl p-4 shadow-2xl border-orange-200">
+                <img 
+                  src="/ram-lala.jpg" 
+                  alt="Ram Lala Portrait" 
+                  className="w-full h-80 object-cover rounded-2xl transform hover:scale-105 transition-transform duration-500"
+                />
             </div>
           </div>
 

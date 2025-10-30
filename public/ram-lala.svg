@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <!-- Background glow -->
+  <defs>
+    <radialGradient id="glowGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#FF8C00" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="crownGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#FF8C00"/>
+    </linearGradient>
+    <linearGradient id="robeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4500"/>
+      <stop offset="100%" stop-color="#8B0000"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  
+  <!-- Background glow -->
+  <circle cx="400" cy="400" r="300" fill="url(#glowGradient)"/>
+  
+  <!-- Decorative mandala background -->
+  <g opacity="0.2">
+    <circle cx="400" cy="400" r="280" fill="none" stroke="#FF8C00" stroke-width="2"/>
+    <circle cx="400" cy="400" r="260" fill="none" stroke="#FF8C00" stroke-width="2"/>
+    <circle cx="400" cy="400" r="240" fill="none" stroke="#FF8C00" stroke-width="2"/>
+    <!-- Mandala patterns -->
+    <g>
+      <path d="M400,120 L400,680" stroke="#FF8C00" stroke-width="1"/>
+      <path d="M120,400 L680,400" stroke="#FF8C00" stroke-width="1"/>
+      <path d="M200,200 L600,600" stroke="#FF8C00" stroke-width="1"/>
+      <path d="M200,600 L600,200" stroke="#FF8C00" stroke-width="1"/>
+    </g>
+  </g>
+  
+  <!-- Ram Lala figure -->
+  <g transform="translate(400, 400)" filter="url(#glow)">
+    <!-- Crown -->
+    <path d="M-80,-180 L-100,-220 L-60,-240 L0,-260 L60,-240 L100,-220 L80,-180 Z" fill="url(#crownGradient)" stroke="#FFD700" stroke-width="3"/>
+    <circle cx="0" cy="-210" r="20" fill="#FFD700" stroke="#FF8C00" stroke-width="2"/>
+    
+    <!-- Face -->
+    <ellipse cx="0" cy="-120" rx="70" ry="80" fill="#FFDAB9" stroke="#CD853F" stroke-width="2"/>
+    
+    <!-- Eyes -->
+    <g>
+      <ellipse cx="-25" cy="-130" rx="12" ry="8" fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+      <ellipse cx="25" cy="-130" rx="12" ry="8" fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+      <circle cx="-25" cy="-130" r="4" fill="#000000"/>
+      <circle cx="25" cy="-130" r="4" fill="#000000"/>
+    </g>
+    
+    <!-- Tilak -->
+    <path d="M0,-150 L0,-160 M-10,-155 L10,-155" stroke="#FF0000" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Smile -->
+    <path d="M-30,-100 Q0,-80 30,-100" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Robe -->
+    <path d="M-70,-40 L-90,100 L-60,150 L0,180 L60,150 L90,100 L70,-40 C70,-40 40,0 0,0 C-40,0 -70,-40 -70,-40 Z" fill="url(#robeGradient)" stroke="#8B0000" stroke-width="3"/>
+    
+    <!-- Hands in prayer position -->
+    <path d="M-10,-20 L-30,40 L-10,60 L10,60 L30,40 L10,-20 Z" fill="#FFDAB9" stroke="#CD853F" stroke-width="2"/>
+    <path d="M0,0 L0,50" fill="none" stroke="#CD853F" stroke-width="2"/>
+    
+    <!-- Lotus base -->
+    <ellipse cx="0" cy="200" rx="120" ry="30" fill="#FF8C00" stroke="#8B0000" stroke-width="3"/>
+    <path d="M-100,190 C-80,170 -40,160 0,160 C40,160 80,170 100,190" fill="none" stroke="#8B0000" stroke-width="3"/>
+  </g>
+  
+  <!-- Decorative elements -->
+  <g opacity="0.7">
+    <!-- Small decorative dots -->
+    <circle cx="250" cy="250" r="5" fill="#FFD700"/>
+    <circle cx="550" cy="250" r="5" fill="#FFD700"/>
+    <circle cx="250" cy="550" r="5" fill="#FFD700"/>
+    <circle cx="550" cy="550" r="5" fill="#FFD700"/>
+    
+    <!-- Decorative lotus patterns -->
+    <path d="M400,150 C420,170 440,160 450,140 C440,160 460,170 480,150 C460,170 440,180 400,150 Z" fill="#FF8C00" opacity="0.5"/>
+    <path d="M400,650 C420,630 440,640 450,660 C440,640 460,630 480,650 C460,630 440,620 400,650 Z" fill="#FF8C00" opacity="0.5"/>
+    <path d="M150,400 C170,420 160,440 140,450 C160,440 170,460 150,480 C170,460 180,440 150,400 Z" fill="#FF8C00" opacity="0.5"/>
+    <path d="M650,400 C630,420 640,440 660,450 C640,440 630,460 650,480 C630,460 620,440 650,400 Z" fill="#FF8C00" opacity="0.5"/>
+  </g>
+</svg>

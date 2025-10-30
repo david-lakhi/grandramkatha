@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div className="text-center md:text-left">
             <div className="mb-4">
-              <div className="text-4xl mb-2">🕉️</div>
+              {/* <div className="text-4xl mb-2">🕉️</div> */}
               <h3 className="text-2xl font-bold text-yellow-400 cinzel">Shri Ram Katha</h3>
             </div>
             <p className="text-orange-200 cormorant">

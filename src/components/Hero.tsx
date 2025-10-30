@@ -50,9 +50,10 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative mb-4 px-8 py-6 mt-24">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-yellow-400 cinzel text-glow animate-title-glow relative z-10 tracking-wide">
-            GRAND SHRI RAM KATHA
+        <div className="relative mb-4 px-8 py-6 mt-32">
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-yellow-400 cinzel text-glow animate-title-glow relative z-10 tracking-wide flex flex-col">
+            <span>SHRI</span>
+            <span>RAM KATHA</span>
           </h2>
           <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/25 via-orange-500/35 to-yellow-500/25 rounded-3xl blur-2xl animate-pulse"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-yellow-400/15 to-transparent rounded-3xl blur-3xl animate-pulse" style={{animationDelay: '0.5s'}}></div>
