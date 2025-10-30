@@ -91,22 +91,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden">
-        <svg viewBox="0 0 1200 100" className="w-full h-20 opacity-20">
-          <path
-            d="M0,50 Q300,20 600,50 T1200,50 L1200,100 L0,100 Z"
-            fill="url(#wave-gradient)"
-          />
-          <defs>
-            <linearGradient id="wave-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#FCD34D" />
-              <stop offset="50%" stopColor="#F97316" />
-              <stop offset="100%" stopColor="#DC2626" />
-            </linearGradient>
-          </defs>
-        </svg>
-      </div>
+    
     </footer>
   );
 }
