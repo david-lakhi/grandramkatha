@@ -93,7 +93,7 @@ export default function Hero() {
               <div className="flex items-center justify-center gap-3">
                 <Calendar className="w-5 h-5 text-yellow-400" />
                 <p className="text-xl md:text-2xl text-yellow-300 devanagari font-semibold">
-                  Katha 23-29 Nov 2025 | Evening 6-9 PM
+                  Katha 23-29 Nov 2025 | 6-9 PM
                 </p>
               </div>
               <div className="flex items-center justify-center gap-2 mt-2">
